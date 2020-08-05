@@ -32,7 +32,6 @@ class AuthorizeApiRequest
 
     # check for token in `Authorization` header
     def http_auth_header
-      puts headers
       if headers['Authorization'].present?
         return headers['Authorization'].split(' ').last
       end
