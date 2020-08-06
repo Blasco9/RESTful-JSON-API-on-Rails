@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+  skip_before_action :authorize_request, only: :create
+
   # return authenticated token upon signup
   def create
     user = User.create!(user_params)
