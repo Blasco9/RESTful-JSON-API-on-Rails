@@ -19,9 +19,12 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'jwt'
 # Serializers for custom representation of JSON responses
 gem 'active_model_serializers'
+# Enable pagination
+gem 'will_paginate'
+# Used to seed data in order to check pagination
+gem 'faker'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
-
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
